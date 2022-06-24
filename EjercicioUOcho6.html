@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let opcion = parseInt(
+        window.prompt("¿Qué operación deseas realizar?\
+        1.- Sumar\
+        2.- Restar\
+        3.- Multiplicar\
+        4.- Dividir\
+        5.- Resto."));
+
+        let num1 = parseInt(window.prompt("Introduce un número:"));
+        let num2 = parseInt(window.prompt("Introduce otro número:"));
+
+        let respuesta = document.createElement("p");
+
+        switch(opcion){
+            case 1:
+            respuesta.innerText = `La suma es ${num1+num2}.`
+            break;
+            case 2:
+            respuesta.innerText = `La resta es ${num1-num2}.`
+            break;
+            case 3:
+            respuesta.innerText = `La multiplicación es ${num1*num2}.`
+            break;
+            case 4: 
+            respuesta.innerText = `La división es ${num1/num2}.`
+            break;
+            case 5: 
+            respuesta.innerText = `El resto es ${num1%num2}.`
+            break;
+            default:
+            respuest.innerText = `Opción no válida.`
+
+        }
+
+        document.body.appendChild(respuesta)
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <div>
+            <div id="if"></div>
+            <div id="switch"></div>
+            <div id="ternario"></div>
+            
+        </div>
+    <script>
+
+        let nombre = window.prompt("Introduce tu nombre:");
+        let edad = parseInt(window.prompt("Introduce tu edad:"));
+
+        if(edad>=18){
+            document.getElementById("if").innerHTML= `<p>Hola ${nombre}. Eres mayor de edad.</p>`
+        }else{
+            document.getElementById("if").innerHTML= `<p>Hola ${nombre}. Eres menor de edad.</p>`
+        }
+        
+    </script>
+</body>
+</html>
